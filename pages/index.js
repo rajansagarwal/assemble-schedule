@@ -27,8 +27,8 @@ export default function Home() {
 				return (
 					<li key={index}>
 						<b>
-							{start.getDate() === '5' ? 'Friday' : 'Saturday'} August{' '}
-							{start.getDate()}, {start.getUTCHours()}
+							{start.getDate().toString() === '5' ? 'Friday' : 'Saturday'}{' '}
+							August {start.getDate()}, {start.getUTCHours()}
 							{start.getUTCMinutes() > 0 ? ':30' : null} - {end.getDate()}
 							{end.getUTCMinutes() > 0 ? ':30' : null}
 						</b>{' '}
