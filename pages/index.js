@@ -22,8 +22,8 @@ export default function Home() {
 	return (
 		<ul>
 			{events.map((item, index) => {
-				let start = new Date(item['Start Time'])
-				let end = new Date(item['End Time'])
+				const start = new Date(item['Start Time'])
+				const end = new Date(item['End Time'])
 				return (
 					<li key={index}>
 						<b>
